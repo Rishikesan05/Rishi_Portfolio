@@ -1,456 +1,771 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Selvaventhan Rishikesan</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Rishi</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Rishi</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-<!-- profile section -->
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/frontface.jpg" alt="Image can not load" class="profile-picture"/>
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Selvaventhan Rishikesan</h1>
-        <p class="section__text__p2">Aspiring Frontend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/22FIS0584_Rishi.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./index.html#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/rishikesan05/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Rishikesan05'"
-          />
-        </div>
-      </div>
-    </section>
-<!-- About section -->
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>12 months <br />A/L Tution Assistant</p>
-            </div>
-            <!-- <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>12 months <br />A/L Tution Assistant</p>
-            </div> -->
-            <div class="details-container">
-              <img
-                src="./assets/education.avif"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc(Hons) in Information Systems (Reading)<br/>Sabaragamuwa University of Sri Lanka</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-            As a dedicated Information Systems student, I am passionate about leveraging AI tools and exploring emerging technologies. I have hands-on experience in editing and videography, combining creativity with technical skills to produce engaging, high-quality content. My interest in machine learning, data analytics, and automation drives me to continuously expand my knowledge in these areas. With a proactive mindset, strong problem-solving skills, and a commitment to learning, I am eager to apply my expertise to solve real-world challenges and contribute to innovative projects.
-            </p>
-          </div>
-        </div>
-        <div class="section__pic-container">
-          <img
-            src="./assets/side-face.jpg"
-            alt="Image can not load"
-            class="about-pic"
-          />
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./index.html#experience'"
-      />
-    </section>
-<!-- skills section -->
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Programming Languages</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML/CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C/C++</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>      
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Databases</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MySQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Firestore</h3>
-                  <p>Learning</p>
-                </div>
-              </article>
-              <!-- <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MongoDB</h3>
-                  <p>Basic</p>
-                </div> -->
-              </article>       
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <!--<div class="details-container">
-            <h2 class="experience-sub-title">Frameworks</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Flutter</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Selenium</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TestNG</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div> -->
-          <div class="details-container">
-            <h2 class="experience-sub-title">Technologies and Tools</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>VS Code</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>IntelliJ IDEA</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git Hub</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <!--<article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Figma</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>-->
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selvaventhan Rishikesan — Full-Stack Digital Transformation Engineer</title>
+  <meta name="description" content="Portfolio of Selvaventhan Rishikesan — Full-Stack Digital Transformation Engineer at HOUSEFIX.LK. Flutter, Firebase, Dart developer. BSc (Hons) Information Systems, SUSL." />
+  <meta name="keywords" content="Rishikesan, portfolio, Flutter developer, Firebase, HOUSEFIX.LK, SUSL, Sri Lanka" />
+  <meta name="author" content="Selvaventhan Rishikesan" />
+  <meta property="og:title" content="Selvaventhan Rishikesan — Portfolio" />
+  <meta property="og:description" content="Full-Stack Digital Transformation Engineer at HOUSEFIX.LK. Building RideSync. Flutter · Firebase · Dart." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.rishiware.com/" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>R</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mediaqueries.css" />
+</head>
+<body>
 
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Android Studio</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
+<!-- ══ DESKTOP NAV ══ -->
+<nav id="desktop-nav">
+  <a href="#" class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">Rishikesan</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#volunteering">Volunteering</a></li>
+    <li><a href="#awards">Awards</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+    <svg id="dt-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="toggle-svg"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    <svg id="dt-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="toggle-svg" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    <span class="theme-label">Dark</span>
+  </button>
+</nav>
+
+<!-- ══ HAMBURGER NAV ══ -->
+<nav id="hamburger-nav">
+  <a href="#" class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">Rishikesan</a>
+  <div class="hamburger-nav-right">
+    <!-- Dark mode button visible in mobile nav bar — NOT inside drawer -->
+    <button class="theme-toggle-mobile-nav" id="theme-toggle-mobile" aria-label="Toggle dark mode" onclick="toggleTheme()">
+      <svg id="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg id="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </button>
+    <button class="hamburger-icon" onclick="toggleMenu()" id="hamburger-icon" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Dropdown — outside nav so it doesn't push content -->
+<div class="mobile-menu-overlay" id="mobile-overlay" onclick="closeMenu()"></div>
+<div class="mobile-menu-drawer" id="mobile-drawer">
+  <div class="drawer-head">
+    <a href="#" class="drawer-logo" onclick="closeMenu();window.scrollTo({top:0,behavior:'smooth'});return false">Rishikesan</a>
+    <button class="drawer-close" onclick="closeMenu()" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <nav class="drawer-nav">
+    <a href="#about" class="drawer-link" onclick="closeMenu()">
+      <span class="drawer-link-num">01</span>About
+    </a>
+    <a href="#skills" class="drawer-link" onclick="closeMenu()">
+      <span class="drawer-link-num">02</span>Skills
+    </a>
+    <a href="#experience" class="drawer-link" onclick="closeMenu()">
+      <span class="drawer-link-num">03</span>Experience
+    </a>
+    <a href="#projects" class="drawer-link" onclick="closeMenu()">
+      <span class="drawer-link-num">04</span>Projects
+    </a>
+    <a href="#volunteering" class="drawer-link" onclick="closeMenu()">
+      <span class="drawer-link-num">05</span>Volunteering
+    </a>
+    <a href="#awards" class="drawer-link" onclick="closeMenu()">
+      <span class="drawer-link-num">06</span>Awards
+    </a>
+    <a href="#contact" class="drawer-link" onclick="closeMenu()">
+      <span class="drawer-link-num">07</span>Contact
+    </a>
+  </nav>
+  <div class="drawer-bottom">
+    <div class="drawer-socials">
+      <a href="https://www.linkedin.com/in/rishikesan05/" target="_blank" class="drawer-social">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="https://github.com/rishikesan05" target="_blank" class="drawer-social">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      </a>
+      <a href="https://www.instagram.com/rishikesan_05" target="_blank" class="drawer-social">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+    </div>
+    <p class="drawer-copy">© <span class="drawer-year"></span> Selvaventhan Rishikesan</p>
+  </div>
+</div>
+
+<!-- ══ HERO ══ -->
+<section id="profile">
+  <div class="hero-bg">
+    <div class="hero-shape hero-shape-1"></div>
+    <div class="hero-shape hero-shape-2"></div>
+    <div class="hero-shape hero-shape-3"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-photo">
+      <img src="./assets/img/frontface.jpg" alt="Selvaventhan Rishikesan"
+        class="profile-picture"
+        onerror="this.onerror=null;this.src='';this.parentElement.classList.add('photo-placeholder')"/>
+    </div>
+    <div class="hero-text">
+      <p class="greeting">Hello, I'm</p>
+      <h1 class="hero-name">Selvaventhan Rishikesan</h1>
+      <p class="hero-role">Full-Stack Digital Transformation Engineer</p>
+      <p class="hero-company">@ HOUSEFIX.LK (PVT) LTD</p>
+      <p class="hero-edu">BSc (Hons) in Information Systems · Undergraduate</p>
+      <div class="hero-tags">
+        <span class="tag">Flutter</span>
+        <span class="tag">Firebase</span>
+        <span class="tag">Dart</span>
+        <span class="tag">Web Dev</span>
+        <span class="tag">UI/UX</span>
+      </div>
+      <!-- Buttons + socials on same row -->
+      <div class="hero-actions">
+        <div class="hero-btn-row">
+          <button class="btn btn-color-2" onclick="window.open('./assets/docs/22FIS0584_Rishi.pdf')">Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Me</button>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/rishikesan05/" target="_blank" class="social-round-btn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/rishikesan05" target="_blank" class="social-round-btn" title="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://www.instagram.com/rishikesan_05" target="_blank" class="social-round-btn" title="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATS BAR ══ -->
+<div class="stats-section">
+  <div class="stats-bar reveal">
+    <div class="stat-item">
+      <div class="stat-number">4+</div>
+      <div class="stat-label">Projects Shipped</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">6</div>
+      <div class="stat-label">Awards Won</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">3+</div>
+      <div class="stat-label">Years Coding</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">5</div>
+      <div class="stat-label">Organizations</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ABOUT ══ -->
+<section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+  <div class="about-grid reveal">
+    <!-- Text LEFT -->
+    <div class="about-left">
+      <div class="about-cards-row">
+        <div class="details-container about-card">
+          <div class="about-card-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+          </div>
+          <h3>Experience</h3>
+          <p>Full-Stack Engineer<br/>@ HOUSEFIX.LK<br/>Mar 2026 – Present</p>
+        </div>
+        <div class="details-container about-card">
+          <div class="about-card-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <h3>Education</h3>
+          <p>BSc (Hons) in<br/>Information Systems<br/>SUSL · Undergraduate</p>
+        </div>
+      </div>
+      <div class="about-text">
+        <p>I'm an undergraduate in Information Systems with a strong interest in building practical digital solutions. I enjoy working on both frontend and backend development, especially using Flutter and modern web technologies.</p>
+        <p>Currently, I'm working as a Full-Stack Engineer at HOUSEFIX.LK (Pvt) Ltd, where I focus on developing and improving digital systems. Outside of work, I take on creative roles in design and branding, which helps me bring a visual perspective to technical work.</p>
+        <p>I'm always looking to learn new technologies and improve my skills through real-world projects. I believe the best way to grow is to build things that actually get used.</p>
+      </div>
+    </div>
+    <!-- Photo RIGHT -->
+    <div class="about-right">
+      <img src="./assets/img/side-face.jpg" alt="Rishikesan" class="about-pic"
+        onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'about-pic-placeholder\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1\'><circle cx=\'12\' cy=\'8\' r=\'4\'/><path d=\'M4 20c0-4 3.6-7 8-7s8 3 8 7\'/></svg></div>'" />
+    </div>
+  </div>
+</section>
+
+<!-- ══ SKILLS ══ -->
+<section id="skills">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Skills</h1>
+  <div class="skills-grid reveal">
+
+    <div class="details-container skills-card">
+      <h2 class="skills-card-title">Mobile &amp; Frameworks</h2>
+      <div class="skills-list">
+        <article><span class="skill-check-svg"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></span><div><h3>Flutter</h3><p>Expert</p></div></article>
+        <article><span class="skill-check-svg"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></span><div><h3>Dart</h3><p>Expert</p></div></article>
+        <article><span class="skill-check-svg"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></span><div><h3>Firebase</h3><p>Experienced</p></div></article>
+        <article><span class="skill-check-svg"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></span><div><h3>React</h3><p>Basic</p></div></article>
+      </div>
+    </div>
+
+    <div class="details-container skills-card">
+      <h2 class="skills-card-title">Programming Languages</h2>
+      <div class="skills-list">
+        <article><span class="skill-check-svg"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></span><div><h3>Java</h3><p>Intermediate</p></div></article>
+        <article><span class="skill-check-svg"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></span><div><h3>Python</h3><p>Intermediate</p></div></article>
+        <article><span class="skill-check-svg"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></span><div><h3>JavaScript</h3><p>Basic</p></div></article>
+        <article><span class="skill-check-svg"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></span><div><h3>HTML / CSS</h3><p>Intermediate</p></div></article>
+      </div>
+    </div>
+
+    <div class="details-container skills-card">
+      <h2 class="skills-card-title">Databases &amp; Tools</h2>
+      <div class="skills-list">
+        <article><span class="skill-check-svg"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></span><div><h3>Firestore</h3><p>Experienced</p></div></article>
+        <article><span class="skill-check-svg"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></span><div><h3>MySQL</h3><p>Intermediate</p></div></article>
+        <article><span class="skill-check-svg"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></span><div><h3>Git / GitHub</h3><p>Intermediate</p></div></article>
+        <article><span class="skill-check-svg"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></span><div><h3>Android Studio</h3><p>Intermediate</p></div></article>
+        <article><span class="skill-check-svg"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></span><div><h3>VS Code</h3><p>Experienced</p></div></article>
+        <article><span class="skill-check-svg"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></span><div><h3>IntelliJ IDEA</h3><p>Intermediate</p></div></article>
+      </div>
+    </div>
+
+    <div class="details-container skills-card">
+      <h2 class="skills-card-title">Design &amp; Creative</h2>
+      <div class="skills-list">
+        <article><span class="skill-check-svg"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></span><div><h3>Figma</h3><p>Experienced</p></div></article>
+        <article><span class="skill-check-svg"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></span><div><h3>Canva</h3><p>Expert</p></div></article>
+        <article><span class="skill-check-svg"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></span><div><h3>CapCut</h3><p>Intermediate</p></div></article>
+        <article><span class="skill-check-svg"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></span><div><h3>UI/UX Design</h3><p>Experienced</p></div></article>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ EXPERIENCE ══ -->
+<section id="experience">
+  <p class="section__text__p1">Where I've Worked</p>
+  <h1 class="title">Experience</h1>
+  <div class="timeline-wrap reveal">
+    <div class="timeline-track"></div>
+
+    <div class="timeline-item">
+      <div class="tl-dot tl-dot--current"></div>
+      <div class="tl-card details-container">
+        <div class="tl-head">
+          <div class="tl-title-group">
+            <span class="tl-badge current">Current</span>
+            <h3 class="tl-role">Full-Stack Digital Transformation Engineer</h3>
+            <p class="tl-company">HOUSEFIX.LK (PVT) LTD</p>
+          </div>
+          <span class="tl-date">Mar 2026 – Present</span>
+        </div>
+        <ul class="tl-bullets">
+          <li>Architecting and building web and mobile platforms to improve company operations.</li>
+          <li>Working across the full stack — frontend UI, backend integrations, and database setup.</li>
+          <li>Helping the business establish a stronger digital presence.</li>
+        </ul>
+        <div class="tl-tags">
+          <span class="tag-sm">Flutter</span>
+          <span class="tag-sm">Firebase</span>
+          <span class="tag-sm">Dart</span>
+          <span class="tag-sm">Full-Stack</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="tl-dot tl-dot--current"></div>
+      <div class="tl-card details-container">
+        <div class="tl-head">
+          <div class="tl-title-group">
+            <span class="tl-badge current">Current</span>
+            <h3 class="tl-role">Freelance Mathematics Tutor (Cambridge Syllabus)</h3>
+            <p class="tl-company">Self Employed · Freelance</p>
+          </div>
+          <span class="tl-date">Oct 2025 – Present</span>
+        </div>
+        <ul class="tl-bullets">
+          <li>Delivering personalised lesson plans tailored to the Cambridge curriculum to ensure academic excellence.</li>
+          <li>Preparing students for international examinations through targeted past-paper analysis and problem-solving techniques.</li>
+          <li>Managing a freelance schedule across multiple locations, including Pambahinna, Balangoda, and Kiri-methenna.</li>
+          <li>Successfully expanded tutoring services to the Balangoda and Kiri-methenna regions in May 2026 to meet growing student demand.</li>
+        </ul>
+        <div class="tl-tags">
+          <span class="tag-sm">Cambridge</span>
+          <span class="tag-sm">Mathematics</span>
+          <span class="tag-sm">Tutoring</span>
+          <span class="tag-sm">Freelance</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="tl-dot"></div>
+      <div class="tl-card details-container">
+        <div class="tl-head">
+          <div class="tl-title-group">
+            <h3 class="tl-role">A/L Tuition Assistant</h3>
+            <p class="tl-company">New Science World, Jaffna</p>
+          </div>
+          <span class="tl-date">Mar 2023 – Feb 2024</span>
+        </div>
+        <ul class="tl-bullets">
+          <li>Assisted students with Advanced Level Physics and Mathematics.</li>
+          <li>Supported the lead tutor in preparing materials and conducting revision sessions.</li>
+        </ul>
+        <div class="tl-tags">
+          <span class="tag-sm">Teaching</span>
+          <span class="tag-sm">Physics</span>
+          <span class="tag-sm">Mathematics</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ PROJECTS ══ -->
+<section id="projects">
+  <p class="section__text__p1">Browse My</p>
+  <h1 class="title">Projects</h1>
+
+  <div class="project-filters">
+    <button class="filter-btn" data-filter="all">All</button>
+    <button class="filter-btn active" data-filter="live">Live</button>
+    <button class="filter-btn" data-filter="ongoing">Ongoing</button>
+    <button class="filter-btn" data-filter="completed">Completed</button>
+    <button class="filter-btn" data-filter="unpublished">Unpublished</button>
+  </div>
+
+  <div class="projects-grid reveal" id="projects-grid">
+
+    <!-- RideSync -->
+    <div class="project-card details-container" data-category="ongoing">
+      <div class="proj-img">
+        <img src="./assets/img/ridesync.png" alt="RideSync App" class="proj-img-pic" />
+      </div>
+      <div class="proj-body">
+        <div class="proj-tags-row">
+          <span class="proj-tech">Flutter</span>
+          <span class="proj-tech">Firebase</span>
+          <span class="proj-tech">Dart</span>
+        </div>
+        <h2 class="proj-name">RideSync</h2>
+        <p class="proj-desc">A real-time transit mobile app connecting passengers and drivers with live scheduling and ride-sharing, built as my capstone project at SUSL.</p>
+        <div class="btn-container proj-btns">
+          <button class="btn btn-color-2 btn-sm" onclick="location.href='https://github.com/rishikesan05'">GitHub</button>
+          <button class="btn btn-color-2 btn-sm" onclick="location.href='#contact'">Request Demo</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOUSEFIX.LK -->
+    <div class="project-card details-container" data-category="live">
+      <div class="proj-img">
+        <img src="./assets/img/housefix.png" alt="HOUSEFIX.LK Platform" class="proj-img-pic" />
+      </div>
+      <div class="proj-body">
+        <div class="proj-tags-row">
+          <span class="proj-tech">Web</span>
+          <span class="proj-tech">Mobile</span>
+          <span class="proj-tech">Full-Stack</span>
+        </div>
+        <h2 class="proj-name">HOUSEFIX.LK Platform</h2>
+        <p class="proj-desc">A full-stack platform for HOUSEFIX.LK that handles service listings, customer interactions, and business management across web and mobile.</p>
+        <div class="btn-container proj-btns">
+          <button class="btn btn-color-1 btn-sm" onclick="location.href='https://www.rishiware.com/'">View Live</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- OMG SABRA -->
+    <div class="project-card details-container" data-category="completed">
+      <div class="proj-img">
+        <img src="./assets/img/omgsabra.png" alt="OMG SABRA Branding" class="proj-img-pic" />
+      </div>
+      <div class="proj-body">
+        <div class="proj-tags-row">
+          <span class="proj-tech">Canva</span>
+          <span class="proj-tech">Figma</span>
+          <span class="proj-tech">Branding</span>
+        </div>
+        <h2 class="proj-name">OMG SABRA Branding</h2>
+        <p class="proj-desc">Visual identity and branding work for the OMG SABRA event series at SUSL — social media assets, event posters, and digital materials across all platforms.</p>
+        <div class="btn-container proj-btns">
+          <button class="btn btn-color-2 btn-sm" onclick="location.href='https://www.linkedin.com/in/rishikesan05/'">View on LinkedIn</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="project-card details-container" data-category="live">
+      <div class="proj-img">
+        <img src="./assets/img/portfolio.png" alt="Portfolio Website" class="proj-img-pic" />
+      </div>
+      <div class="proj-body">
+        <div class="proj-tags-row">
+          <span class="proj-tech">HTML</span>
+          <span class="proj-tech">CSS</span>
+          <span class="proj-tech">JavaScript</span>
+        </div>
+        <h2 class="proj-name">This Portfolio</h2>
+        <p class="proj-desc">My personal portfolio website — built from scratch with HTML, CSS and JavaScript. Includes dark mode, project filtering, and full responsiveness.</p>
+        <div class="btn-container proj-btns">
+          <button class="btn btn-color-1 btn-sm" onclick="location.href='https://rishikesan05.github.io/Rishi_Portfolio/'">View Live</button>
+          <button class="btn btn-color-2 btn-sm" onclick="location.href='https://github.com/rishikesan05'">GitHub</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <p class="no-results-msg" id="no-results" style="display:none;">No projects in this category yet.</p>
+</section>
+
+<!-- ══ VOLUNTEERING ══ -->
+<section id="volunteering">
+  <p class="section__text__p1">Community &amp; Creativity</p>
+  <h1 class="title">Volunteering &amp; Activities</h1>
+  <div class="vol-grid reveal">
+
+    <div class="details-container vol-card">
+      <div class="vol-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+      </div>
+      <div class="vol-info">
+        <div class="vol-head">
+          <div><h3>Lead Developer — RideSync</h3><p class="vol-org">Sabaragamuwa University of Sri Lanka · Capstone</p></div>
+          <span class="tl-date">Jan 2026 – Present</span>
+        </div>
+        <p class="vol-desc">Leading development of a real-time transit mobile app. Responsible for system architecture, state management, and UI/UX.</p>
+        <div class="tl-tags"><span class="tag-sm">Flutter</span><span class="tag-sm">Firebase</span><span class="tag-sm">Architecture</span></div>
+      </div>
+    </div>
+
+    <div class="details-container vol-card">
+      <div class="vol-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+      </div>
+      <div class="vol-info">
+        <div class="vol-head">
+          <div><h3>Main Designer — Editorial Team</h3><p class="vol-org">Leo Club of SUSL</p></div>
+          <span class="tl-date">Oct 2025 – Present</span>
+        </div>
+        <p class="vol-desc">Creating visual content and managing club publications as the main designer for the Leo Club editorial team.</p>
+        <div class="tl-tags"><span class="tag-sm">Canva</span><span class="tag-sm">Figma</span><span class="tag-sm">Editorial</span></div>
+      </div>
+    </div>
+
+    <div class="details-container vol-card">
+      <div class="vol-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+      </div>
+      <div class="vol-info">
+        <div class="vol-head">
+          <div><h3>Graphic Designer — PR Committee</h3><p class="vol-org">Faculty of Computing, SUSL</p></div>
+          <span class="tl-date">Oct 2024 – Present</span>
+        </div>
+        <p class="vol-desc">Designing promotional materials and digital assets for faculty events as a student volunteer.</p>
+        <div class="tl-tags"><span class="tag-sm">Graphic Design</span><span class="tag-sm">Canva</span><span class="tag-sm">CapCut</span></div>
+      </div>
+    </div>
+
+    <div class="details-container vol-card">
+      <div class="vol-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+      </div>
+      <div class="vol-info">
+        <div class="vol-head">
+          <div><h3>Active Member</h3><p class="vol-org">IEEE Student Branch · Society of Computer Science · SUSL</p></div>
+          <span class="tl-date">Oct 2024 – Present</span>
+        </div>
+        <p class="vol-desc">Participating in tech events, workshops, and initiatives organised by the IEEE Student Branch and Society of Computer Science at SUSL.</p>
+        <div class="tl-tags"><span class="tag-sm">IEEE</span><span class="tag-sm">Tech Events</span></div>
+      </div>
+    </div>
+
+    <div class="details-container vol-card">
+      <div class="vol-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      </div>
+      <div class="vol-info">
+        <div class="vol-head">
+          <div><h3>Board of Prefects — Member</h3><p class="vol-org">Jaffna Hindu College</p></div>
+          <span class="tl-date">Jan 2014 – Dec 2023</span>
+        </div>
+        <p class="vol-desc">Served as a member of the Board of Prefects, contributing to school discipline and student governance throughout my secondary education.</p>
+        <div class="tl-tags"><span class="tag-sm">Leadership</span><span class="tag-sm">Discipline</span></div>
+      </div>
+    </div>
+
+    <div class="details-container vol-card">
+      <div class="vol-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      </div>
+      <div class="vol-info">
+        <div class="vol-head">
+          <div><h3>President — Young Men Hindu Association</h3><p class="vol-org">Jaffna Hindu College</p></div>
+          <span class="tl-date">Jan 2014 – Dec 2023</span>
+        </div>
+        <p class="vol-desc">Led the Young Men Hindu Association, organising cultural and community events that promoted heritage and student engagement.</p>
+        <div class="tl-tags"><span class="tag-sm">President</span><span class="tag-sm">Cultural</span><span class="tag-sm">Community</span></div>
+      </div>
+    </div>
+
+    <div class="details-container vol-card">
+      <div class="vol-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+      </div>
+      <div class="vol-info">
+        <div class="vol-head">
+          <div><h3>President — Advanced Level Union</h3><p class="vol-org">Jaffna Hindu College</p></div>
+          <span class="tl-date">Jan 2014 – Dec 2023</span>
+        </div>
+        <p class="vol-desc">Presided over the Advanced Level Union, coordinating academic support initiatives and student welfare programmes for A/L students.</p>
+        <div class="tl-tags"><span class="tag-sm">President</span><span class="tag-sm">Academic</span><span class="tag-sm">Student Welfare</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ AWARDS ══ -->
+<section id="awards">
+  <p class="section__text__p1">Recognition</p>
+  <h1 class="title">Awards &amp; Achievements</h1>
+  <div class="awards-grid reveal">
+
+    <div class="details-container award-card">
+      <div class="award-thumb-wrap">
+        <div class="award-svg-fallback">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M24 4L28.5 16H42L31.5 23.5L35.5 36L24 29L12.5 36L16.5 23.5L6 16H19.5Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+      <div class="award-info">
+        <h3>Best Designer Award ×4</h3>
+        <p>Leo Club of SUSL</p>
+        <span class="award-date">Nov 2025 · Jan · Feb · Mar 2026</span>
+        <a href="https://www.linkedin.com/in/rishikesan05/" target="_blank" class="verify-btn">Verify ↗</a>
+      </div>
+    </div>
+
+    <div class="details-container award-card">
+      <div class="award-thumb-wrap">
+        <div class="award-svg-fallback">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="20" r="12" stroke="currentColor" stroke-width="2.5"/><path d="M16 30L12 44L24 38L36 44L32 30" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+      <div class="award-info">
+        <h3>Best Member Award</h3>
+        <p>Leo Club of SUSL</p>
+        <span class="award-date">October 2025</span>
+        <a href="https://www.linkedin.com/in/rishikesan05/" target="_blank" class="verify-btn">Verify ↗</a>
+      </div>
+    </div>
+
+    <div class="details-container award-card">
+      <div class="award-thumb-wrap">
+        <div class="award-svg-fallback">
+          <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="14" height="14" rx="2" stroke="currentColor" stroke-width="2.5"/><rect x="26" y="8" width="14" height="14" rx="2" stroke="currentColor" stroke-width="2.5"/><rect x="8" y="26" width="14" height="14" rx="2" stroke="currentColor" stroke-width="2.5"/><circle cx="33" cy="33" r="6" stroke="currentColor" stroke-width="2.5"/></svg>
+        </div>
+      </div>
+      <div class="award-info">
+        <h3>Best Visuals Award</h3>
+        <p>Department of Languages, SUSL</p>
+        <span class="award-date">2025</span>
+        <a href="https://www.linkedin.com/in/rishikesan05/" target="_blank" class="verify-btn">Verify ↗</a>
+      </div>
+    </div>
+
+    <div class="details-container award-card">
+      <div class="award-thumb-wrap">
+        <div class="award-svg-fallback">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M9 18v12M15 16v16M21 13v22M27 16v16M33 18v12M39 20v8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+      <div class="award-info">
+        <h3>Best Background Music</h3>
+        <p>Tamil Drama Festival 2025 — SUSL</p>
+        <span class="award-date">24 September 2025</span>
+        <a href="https://www.linkedin.com/in/rishikesan05/" target="_blank" class="verify-btn">Verify ↗</a>
+      </div>
+    </div>
+
+    <div class="details-container award-card">
+      <div class="award-thumb-wrap">
+        <div class="award-svg-fallback">
+          <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="36" height="36" rx="8" stroke="currentColor" stroke-width="2.5"/><circle cx="24" cy="24" r="7" stroke="currentColor" stroke-width="2"/><path d="M20 24l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+      <div class="award-info">
+        <h3>Google AI Essentials</h3>
+        <p>Google Certification</p>
+        <span class="award-date">Certified</span>
+        <a href="https://www.linkedin.com/in/rishikesan05/details/certifications/" target="_blank" class="verify-btn">Verify ↗</a>
+      </div>
+    </div>
+
+    <div class="details-container award-card">
+      <div class="award-thumb-wrap">
+        <div class="award-svg-fallback">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M24 4L44 14V24C44 34.5 35 43 24 46C13 43 4 34.5 4 24V14Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M16 24l5 5 7-9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+      <div class="award-info">
+        <h3>Food Safety Certification</h3>
+        <p>Industrial Knowledge Academy</p>
+        <span class="award-date">March 2026 · IKA/SUWS/26/112</span>
+        <a href="https://www.linkedin.com/in/rishikesan05/details/certifications/" target="_blank" class="verify-btn">Verify ↗</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section id="contact">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+  <div class="contact-grid reveal">
+
+    <div class="contact-left">
+      <p class="contact-intro">I'm open to opportunities, collaborations, and conversations. Feel free to reach out through any of these channels.</p>
+      <div class="contact-links">
+        <a href="mailto:bsrishi2003@gmail.com" class="contact-link-card">
+          <div class="cl-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="cl-text">
+            <span class="cl-label">Email</span>
+            <span class="cl-value">bsrishi2003@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/rishikesan05/" target="_blank" class="contact-link-card">
+          <div class="cl-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div class="cl-text">
+            <span class="cl-label">LinkedIn</span>
+            <span class="cl-value">linkedin.com/in/rishikesan05</span>
+          </div>
+        </a>
+        <a href="https://github.com/rishikesan05" target="_blank" class="contact-link-card">
+          <div class="cl-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </div>
+          <div class="cl-text">
+            <span class="cl-label">GitHub</span>
+            <span class="cl-value">github.com/rishikesan05</span>
+          </div>
+        </a>
+        <div class="contact-link-card" onclick="document.getElementById('phone-modal').classList.add('active')" style="cursor:pointer">
+          <div class="cl-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </div>
+          <div class="cl-text">
+            <span class="cl-label">Phone / WhatsApp</span>
+            <span class="cl-value">+94 77 076 0636</span>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./index.html#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Memorable Website</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://rishikesan.tech'"
-              >
-                Live
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Cake Zone</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Resell Website</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
+    </div>
+
+    <div class="contact-right">
+      <h3 class="form-heading">Send a Message</h3>
+      <form class="contact-form" id="contact-form" onsubmit="handleContactForm(event)">
+        <!-- Web3Forms config -->
+        <input type="hidden" name="access_key" value="bdbc8e4b-18f9-423e-b640-a6033c5fa479" />
+        <input type="hidden" name="subject" value="New Portfolio Message!" />
+        <input type="checkbox" name="botcheck" style="display:none" />
+        <div id="form-status" class="form-status"></div>
+
+        <input type="text" name="name" placeholder="Your name" class="form-input" required />
+        <input type="email" name="email" placeholder="Your email" class="form-input" required />
+        <input type="text" name="_subject" placeholder="Subject" class="form-input" />
+        <div class="phone-row">
+          <select class="form-input phone-code" id="country-code" name="country_code">
+            <option value="+94">🇱🇰 +94</option>
+            <option value="+91">🇮🇳 +91</option>
+            <option value="+1">🇺🇸 +1</option>
+            <option value="+44">🇬🇧 +44</option>
+            <option value="+61">🇦🇺 +61</option>
+            <option value="+971">🇦🇪 +971</option>
+            <option value="+65">🇸🇬 +65</option>
+            <option value="+60">🇲🇾 +60</option>
+            <option value="+81">🇯🇵 +81</option>
+            <option value="+49">🇩🇪 +49</option>
+            <option value="+33">🇫🇷 +33</option>
+            <option value="+39">🇮🇹 +39</option>
+            <option value="+82">🇰🇷 +82</option>
+            <option value="+86">🇨🇳 +86</option>
+            <option value="+966">🇸🇦 +966</option>
+            <option value="+974">🇶🇦 +974</option>
+            <option value="+64">🇳🇿 +64</option>
+          </select>
+          <input type="tel" name="phone" placeholder="Phone number" class="form-input phone-number" inputmode="numeric" pattern="[0-9]*" oninput="this.value=this.value.replace(/[^0-9]/g,'')" />
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./index.html#contact'"
-      />
-    </section>
-<!-- contact section -->
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="bsrishi2003@gmail.com">bsrishi2003@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/rishikesan05/">LinkedIn</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/test.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="+94 770760636 ">+94 770760636 </a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Selvaventhan Rishikesan. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+        <textarea name="message" placeholder="Your message..." class="form-input form-textarea" required></textarea>
+        <button type="submit" class="btn btn-color-1 form-submit-btn">Send Message →</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- Phone Modal -->
+<div class="modal-overlay" id="phone-modal" onclick="if(event.target===this)this.classList.remove('active')">
+  <div class="modal-card">
+    <button class="modal-close" onclick="document.getElementById('phone-modal').classList.remove('active')">&times;</button>
+    <p class="modal-title">Contact via</p>
+    <p class="modal-number">+94 77 076 0636</p>
+    <div class="modal-options">
+      <a href="tel:+94770760636" class="modal-btn modal-btn-call">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call
+      </a>
+      <a href="https://wa.me/94770760636" target="_blank" class="modal-btn modal-btn-wa">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-inner">
+    <p class="footer-copy">© <span id="footer-year"></span> Selvaventhan Rishikesan. All rights reserved.</p>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/rishikesan05/" target="_blank" title="LinkedIn" class="footer-social-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="https://github.com/rishikesan05" target="_blank" title="GitHub" class="footer-social-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      </a>
+      <a href="mailto:bsrishi2003@gmail.com" title="Email" class="footer-social-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
 </html>
