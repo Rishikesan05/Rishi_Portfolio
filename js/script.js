@@ -114,8 +114,8 @@ filterBtns.forEach(btn => {
       if (filter === "all" && visibleCount > 6) {
         toggleBtn.style.display = "inline-flex";
         toggleBtn.innerHTML = isExpanded 
-          ? 'Show Less <svg style="width:1.2em;height:1.2em;margin-left:0.3em;vertical-align:-0.25em;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>' 
-          : 'Show More <svg style="width:1.2em;height:1.2em;margin-left:0.3em;vertical-align:-0.25em;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>';
+          ? 'Show Less <svg width="20" height="20" style="width:1.2em;height:1.2em;margin-left:0.3em;vertical-align:-0.25em;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>' 
+          : 'Show More <svg width="20" height="20" style="width:1.2em;height:1.2em;margin-left:0.3em;vertical-align:-0.25em;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>';
       } else {
         toggleBtn.style.display = "none";
       }
@@ -314,8 +314,8 @@ function toggleGrid(selector, btn) {
   const isExpanded = grid.classList.contains("expanded");
   
   btn.innerHTML = isExpanded 
-    ? 'Show Less <svg style="width:1.2em;height:1.2em;margin-left:0.3em;vertical-align:-0.25em;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>' 
-    : 'Show More <svg style="width:1.2em;height:1.2em;margin-left:0.3em;vertical-align:-0.25em;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>';
+    ? 'Show Less <svg width="20" height="20" style="width:1.2em;height:1.2em;margin-left:0.3em;vertical-align:-0.25em;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>' 
+    : 'Show More <svg width="20" height="20" style="width:1.2em;height:1.2em;margin-left:0.3em;vertical-align:-0.25em;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>';
 }
 
 /* ======================================
