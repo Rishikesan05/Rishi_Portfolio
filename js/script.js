@@ -1,12 +1,7 @@
-/* ══════════════════════════════════════
-   DYNAMIC YEAR
-══════════════════════════════════════ */
-const yearEl = document.getElementById("footer-year");
-if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-/* ══════════════════════════════════════
+/* ======================================
    MOBILE DRAWER — slide-in from right
-══════════════════════════════════════ */
+====================================== */
 const drawer    = document.getElementById("mobile-drawer");
 const overlay   = document.getElementById("mobile-overlay");
 const hamburger = document.getElementById("hamburger-icon");
@@ -33,9 +28,9 @@ function toggleMenu() {
   }
 }
 
-/* ══════════════════════════════════════
+/* ======================================
    DARK MODE
-══════════════════════════════════════ */
+====================================== */
 const THEME_KEY = "rishi-theme";
 
 function applyTheme(theme) {
@@ -79,9 +74,9 @@ if (desktopBtn) desktopBtn.addEventListener("click", toggleTheme);
   }
 })();
 
-/* ══════════════════════════════════════
+/* ======================================
    PROJECT FILTER
-══════════════════════════════════════ */
+====================================== */
 const filterBtns  = document.querySelectorAll(".filter-btn");
 const projectCards = document.querySelectorAll(".project-card");
 const noResultsEl  = document.getElementById("no-results");
@@ -92,27 +87,58 @@ filterBtns.forEach(btn => {
     this.classList.add("active");
 
     const filter = this.dataset.filter;
-    let visible = 0;
+    let visibleCount = 0;
+    
+    const grid = document.getElementById("projects-grid");
+    const isExpanded = grid ? grid.classList.contains("expanded") : false;
 
     projectCards.forEach(card => {
-      const show = filter === "all" || card.dataset.category === filter;
+      const match = filter === "all" || card.dataset.category === filter;
+      let show = false;
+      
+      if (match) {
+        visibleCount++;
+        if (filter !== "all" || isExpanded || visibleCount <= 6) {
+          show = true;
+        }
+      }
       card.classList.toggle("hidden", !show);
-      if (show) visible++;
     });
 
     if (noResultsEl) {
-      noResultsEl.style.display = visible === 0 ? "block" : "none";
+      noResultsEl.style.display = visibleCount === 0 ? "block" : "none";
+    }
+    
+    const toggleBtn = document.getElementById("projects-toggle-btn");
+    if (toggleBtn) {
+      if (filter === "all" && visibleCount > 6) {
+        toggleBtn.style.display = "inline-flex";
+        toggleBtn.innerHTML = isExpanded 
+          ? 'Show Less <svg style="width:1.2em;height:1.2em;margin-left:0.3em;vertical-align:-0.25em;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>' 
+          : 'Show More <svg style="width:1.2em;height:1.2em;margin-left:0.3em;vertical-align:-0.25em;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>';
+      } else {
+        toggleBtn.style.display = "none";
+      }
     }
   });
 });
+
+function toggleProjectsGrid() {
+  const grid = document.getElementById("projects-grid");
+  if (!grid) return;
+  grid.classList.toggle("expanded");
+  
+  const activeFilter = document.querySelector(".filter-btn.active");
+  if (activeFilter) activeFilter.click();
+}
 
 // Trigger default filter on load
 const activeFilter = document.querySelector(".filter-btn.active");
 if (activeFilter) activeFilter.click();
 
-/* ══════════════════════════════════════
+/* ======================================
    CONTACT FORM
-══════════════════════════════════════ */
+====================================== */
 async function handleContactForm(e) {
   e.preventDefault();
   const form = e.target;
@@ -171,9 +197,9 @@ async function handleContactForm(e) {
   }
 }
 
-/* ══════════════════════════════════════
+/* ======================================
    ACTIVE NAV LINK ON SCROLL
-══════════════════════════════════════ */
+====================================== */
 const sections    = document.querySelectorAll("section[id]");
 const allNavLinks = document.querySelectorAll("#desktop-nav .nav-links a");
 
@@ -193,9 +219,9 @@ const navObserver = new IntersectionObserver((entries) => {
 
 sections.forEach(s => navObserver.observe(s));
 
-/* ══════════════════════════════════════
+/* ======================================
    LINKEDIN FEED AUTO-SCROLL
-══════════════════════════════════════ */
+====================================== */
 let currentPost = 0;
 const posts = document.querySelectorAll(".lf-post");
 const dots  = document.querySelectorAll(".lf-dot");
@@ -223,12 +249,10 @@ if (posts.length > 0) {
   }
 }
 
-/* Drawer year */
-document.querySelectorAll(".drawer-year").forEach(el => el.textContent = new Date().getFullYear());
 
-/* ══════════════════════════════════════
+/* ======================================
    SCROLL REVEAL — fade-in on scroll
-══════════════════════════════════════ */
+====================================== */
 const revealElements = document.querySelectorAll(".reveal");
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -241,9 +265,9 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 revealElements.forEach(el => revealObserver.observe(el));
 
-/* ══════════════════════════════════════
+/* ======================================
    ANIMATED STAT COUNTER
-══════════════════════════════════════ */
+====================================== */
 function animateCounters() {
   document.querySelectorAll(".stat-number").forEach(el => {
     const raw = el.textContent.trim();
@@ -278,3 +302,103 @@ if (statsBar) {
   }, { threshold: 0.5 });
   statsObserver.observe(statsBar);
 }
+
+/* ======================================
+   SHOW MORE / LESS TOGGLE
+====================================== */
+function toggleGrid(selector, btn) {
+  const grid = document.querySelector(selector);
+  if (!grid) return;
+  
+  grid.classList.toggle("expanded");
+  const isExpanded = grid.classList.contains("expanded");
+  
+  btn.innerHTML = isExpanded 
+    ? 'Show Less <svg style="width:1.2em;height:1.2em;margin-left:0.3em;vertical-align:-0.25em;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>' 
+    : 'Show More <svg style="width:1.2em;height:1.2em;margin-left:0.3em;vertical-align:-0.25em;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>';
+}
+
+/* ======================================
+   DYNAMIC STATS CALCULATION
+====================================== */
+function calculateStats() {
+  // Projects: count all project cards
+  const projectCount = document.querySelectorAll(".project-card").length;
+  const statProjects = document.getElementById("stat-projects");
+  if (statProjects) statProjects.textContent = projectCount + "+";
+
+  // Awards: count only major awards
+  const awardsCount = document.querySelectorAll('.award-card[data-major="true"]').length;
+  const statAwards = document.getElementById("stat-awards");
+  if (statAwards) statAwards.textContent = awardsCount;
+
+  // Years Coding: calculate from 2023
+  const currentYear = new Date().getFullYear();
+  const yearsCoding = currentYear - 2023;
+  const statYears = document.getElementById("stat-years");
+  if (statYears) statYears.textContent = yearsCoding + "+";
+
+  // Footer Year
+  const footerYear = document.getElementById("footer-year");
+  if (footerYear) footerYear.textContent = currentYear;
+
+  // Organizations: count unique tags
+  const orgCount = document.querySelectorAll('[data-count-org="true"]').length;
+  const statOrgs = document.getElementById("stat-orgs");
+  if (statOrgs) statOrgs.textContent = orgCount;
+}
+
+/* ======================================
+   DEMO MODAL LOGIC
+====================================== */
+function openDemoModal(projectName) {
+  const modal = document.getElementById('demo-modal');
+  const projectInput = document.getElementById('demo-project');
+  if (modal && projectInput) {
+    projectInput.value = projectName;
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden'; 
+  }
+}
+
+function closeDemoModal() {
+  const modal = document.getElementById('demo-modal');
+  const form = document.getElementById('demo-form');
+  if (modal) {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+    if (form) form.reset();
+  }
+}
+
+function sendDemoRequest(type) {
+  const name = document.getElementById('demo-name').value.trim();
+  const email = document.getElementById('demo-email').value.trim();
+  const project = document.getElementById('demo-project').value.trim();
+  const message = document.getElementById('demo-message').value.trim();
+
+  if (!name || !email || !message) {
+    alert("Please fill in all required fields.");
+    return;
+  }
+
+  const subject = `Demo Request: ${project}`;
+  const fullMessage = `Hello Rishi,\n\nI am interested in a demo for ${project}.\n\nDetails:\nName: ${name}\nEmail: ${email}\nMessage: ${message}`;
+
+  if (type === 'whatsapp') {
+    const waUrl = `https://wa.me/94770760636?text=${encodeURIComponent(fullMessage)}`;
+    window.open(waUrl, '_blank');
+  } else if (type === 'email') {
+    const mailtoUrl = `mailto:bsrishi2003@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(fullMessage)}`;
+    window.location.href = mailtoUrl;
+  } else if (type === 'gmail') {
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=bsrishi2003@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(fullMessage)}`;
+    window.open(gmailUrl, '_blank');
+  }
+  
+  closeDemoModal();
+}
+
+
+// Run immediately to set target values before scroll animation triggers
+calculateStats();
