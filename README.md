@@ -1,4 +1,4 @@
-# Rishi Portfolio — Full-Stack Digital Transformation Engineer
+# Rishi Portfolio | Full-Stack Digital Transformation Engineer
 
 The **Rishi Portfolio** is a premium, high-performance personal showcase of engineering-led digital products, architectural design, and creative content. It serves as the central hub for the work of **Rishikesan**, a Full-Stack Digital Transformation Engineer based in Sri Lanka.
 
@@ -25,5 +25,4 @@ The **Rishi Portfolio** is a premium, high-performance personal showcase of engi
 ## 🚀 Deployment & Subdomains
 The portfolio is designed to be hosted at **www.rishiware.com**, serving as the gateway to a network of project-specific subdomains (e.g., `ridesync.rishiware.com`, `primeware.housefix.lk`).
 
----
-*Developed by Rishikesan. © 2024.*
+
