@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rishiware.com/sitemap.xml
