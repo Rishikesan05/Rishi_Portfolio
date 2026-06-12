@@ -3,7 +3,7 @@
    1400 | 1200 | 900 | 600 | 400
 ══════════════════════════════════════ */
 
-/* ── 1400px+ ── */
+/* ── 1400px+ — widescreen polish ── */
 @media screen and (min-width: 1400px) {
   section { padding: 5rem 10rem; }
   #profile { padding: 5rem 10rem; }
@@ -12,7 +12,7 @@
   .stats-section { padding: 0 10rem 4rem; }
 }
 
-/* ── 1200px ── */
+/* ── 1200px — tablet landscape / small laptop ── */
 @media screen and (max-width: 1200px) {
   #desktop-nav { display: none; }
   #hamburger-nav { display: flex; }
@@ -31,15 +31,19 @@
 
   .projects-grid { grid-template-columns: 1fr 1fr; }
   .awards-grid { grid-template-columns: 1fr 1fr; }
-  .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+
+
+  /* LinkedIn feed */
+  .linkedin-feed { margin-top: 1.25rem; }
 
   footer { padding: 1.5rem 3rem; }
 }
 
-/* ── 900px ── */
+/* ── 900px — tablet portrait ── */
 @media screen and (max-width: 900px) {
   section { padding: 3.5rem 2rem; }
-  .title { font-size: 2rem; }
+  .title { font-size: 2rem; margin-bottom: 2rem; }
+  .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
 
   #profile { padding: 3rem 2rem; }
   .hero-inner {
@@ -55,15 +59,15 @@
   .hero-socials { justify-content: center; }
   .btn-container { justify-content: center; }
 
-  /* Stats bar responsive */
+  /* Stats bar — 2x2 grid */
   .stats-section { padding: 0 2rem 3rem; }
   .stats-bar { flex-wrap: wrap; gap: 1.5rem; padding: 1.5rem; }
   .stat-item + .stat-item { border-left: none; padding-left: 0; }
   .stat-item { flex: 0 0 calc(50% - 0.75rem); }
   .stat-number { font-size: 1.8rem; }
 
+  /* About — photo on top, circular */
   .about-cards-row { flex-direction: column; }
-
   .about-right {
     display: flex;
     justify-content: center;
@@ -89,32 +93,46 @@
   }
   .about-right { order: -1; }
 
+  /* Skills — single column cards */
   .skills-grid { grid-template-columns: 1fr; }
 
+  /* Projects — single column */
   .projects-grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; }
 
+  /* Timeline — adjust dot and track positioning */
   .timeline-wrap { padding-left: 2rem; }
+  .timeline-track { left: 0.6rem; }
   .tl-dot { left: -1.65rem; }
+  .tl-dot--current { left: -1.75rem; }
   .tl-head { flex-direction: column; gap: 0.4rem; }
+  .tl-role { font-size: 0.9rem; }
 
+  /* Volunteering */
   .vol-card { padding: 1.1rem; }
   .vol-head { flex-direction: column; gap: 0.35rem; }
 
+  /* Awards — single column */
   .awards-grid { grid-template-columns: 1fr; }
 
+  /* Contact other platforms */
   .op-row { grid-template-columns: repeat(3, 1fr); }
 
+  /* LinkedIn feed */
+  .lf-text { font-size: 0.78rem; }
+
+  /* Footer */
   footer { padding: 1.5rem 2rem; }
   .footer-inner { flex-direction: column; text-align: center; }
 }
 
-/* ── 600px ── */
+/* ── 600px — mobile landscape / large phone ── */
 @media screen and (max-width: 600px) {
   section { padding: 3rem 1.25rem; }
-  .title { font-size: 1.75rem; }
+  .title { font-size: 1.75rem; margin-bottom: 1.75rem; }
 
+  /* Hero */
   #profile { padding: 2.5rem 1.25rem; }
-  .hero-photo { width: 200px; height: 200px; }
+  .hero-photo { width: 180px; height: 180px; }
   .hero-name { font-size: 1.45rem; }
   .hero-role { font-size: 0.9rem; }
   .hero-company { font-size: 0.82rem; }
@@ -125,56 +143,159 @@
   .hero-btn-row .btn { width: auto; max-width: none; font-size: 0.82rem; padding: 0.6rem 1.4rem; }
   .hero-socials { justify-content: center; }
 
+  /* Stats — 2x2, tighter */
   .stats-section { padding: 0 1.25rem 2.5rem; }
   .stats-bar { margin-top: -1.5rem; padding: 1.25rem; gap: 1rem; }
   .stat-number { font-size: 1.5rem; }
   .stat-label { font-size: 0.68rem; }
 
-  .skills-list { grid-template-columns: 1fr 1fr; }
-  .skills-list article { justify-content: flex-start; }
-  .skills-card { text-align: center; }
+  /* Skills */
+  .skills-card { padding: 1.25rem; }
+  .skills-list { grid-template-columns: 1fr 1fr; gap: 0.65rem; }
+  .skills-list article { justify-content: flex-start; text-align: left; }
+  .skills-card-title { font-size: 0.88rem; margin-bottom: 1rem; }
 
+  /* Project filters */
   .project-filters { gap: 0.4rem; flex-wrap: wrap; justify-content: center; }
   .filter-btn { font-size: 0.74rem; padding: 0.38rem 0.8rem; }
 
+  /* Project cards */
   .proj-img { height: 170px; }
-  .proj-btns { justify-content: flex-start; flex-wrap: wrap; }
+  .proj-btns { justify-content: center; flex-wrap: wrap; }
+  .proj-name { font-size: 0.95rem; }
+  .proj-desc { font-size: 0.8rem; }
 
+  /* Timeline */
+  .timeline-wrap { padding-left: 1.75rem; }
+  .timeline-track { left: 0.5rem; }
+  .tl-dot { left: -1.4rem; width: 10px; height: 10px; }
+  .tl-dot--current { left: -1.5rem; width: 12px; height: 12px; }
+  .tl-card { padding: 1.1rem 1.2rem; }
+  .tl-role { font-size: 0.88rem; }
+  .tl-bullets li { font-size: 0.82rem; }
+  .tl-date { font-size: 0.7rem; }
+
+  /* Volunteering */
   .vol-card { flex-direction: column; }
   .vol-icon { width: 38px; height: 38px; }
+  .vol-desc { font-size: 0.8rem; }
 
+  /* Awards */
   .award-card { flex-direction: column; align-items: center; text-align: center; }
   .award-thumb-wrap { width: 72px; height: 72px; }
-
   .awards-grid { grid-template-columns: 1fr; }
 
+  /* Contact */
   .op-row { grid-template-columns: 1fr 1fr; }
-
   .cl-value { font-size: 0.8rem; }
+  .contact-intro { font-size: 0.85rem; }
+
+  /* Phone form row */
+  .phone-row { flex-direction: column; gap: 0.5rem; }
+  .phone-code { width: 100%; }
+
+  /* LinkedIn feed */
+  .lf-header span { font-size: 0.76rem; }
+  .lf-text { font-size: 0.76rem; }
+  .lf-post { padding: 0.85rem; }
+  .lf-avatar { width: 30px; height: 30px; font-size: 0.65rem; }
+  .lf-name { font-size: 0.78rem; }
+
+  /* Modal */
+  .modal-card { padding: 2rem 1.5rem; border-radius: 1.5rem; }
+  .modal-number { font-size: 1.3rem; }
+  .modal-desc { font-size: 0.92rem; margin-bottom: 1.25rem; }
+  .modal-input, .modal-textarea { padding: 0.75rem 1rem; font-size: 0.85rem; margin-bottom: 0.6rem; }
+  .modal-textarea { min-height: 80px; }
+  .modal-btn { padding: 0.7rem 1rem; }
 
   footer { padding: 1.25rem; }
 }
 
-/* ── 400px ── */
+/* ── 400px — small phone ── */
 @media screen and (max-width: 400px) {
   section { padding: 2.5rem 1rem; }
-  .title { font-size: 1.5rem; }
+  .title { font-size: 1.5rem; margin-bottom: 1.5rem; }
 
+  /* Hero */
   #profile { padding: 2rem 1rem; }
-  .hero-photo { width: 170px; height: 170px; }
-  .hero-name { font-size: 1.3rem; }
+  .hero-photo { width: 150px; height: 150px; }
+  .hero-name { font-size: 1.25rem; }
+  .hero-role { font-size: 0.84rem; }
+  .hero-company { font-size: 0.78rem; }
+  .hero-edu { font-size: 0.72rem; }
+  .hero-tags { gap: 0.35rem; }
+  .hero-tags .tag { font-size: 0.7rem; padding: 3px 9px; }
+  .hero-btn-row .btn { font-size: 0.78rem; padding: 0.55rem 1.15rem; }
+  .social-round-btn { width: 34px; height: 34px; }
+  .social-round-btn svg { width: 15px; height: 15px; }
 
+  /* Stats — single column */
   .stats-section { padding: 0 1rem 2rem; }
-  .stats-bar { gap: 0.75rem; padding: 1rem; }
+  .stats-bar { gap: 0.75rem; padding: 1rem; flex-direction: column; }
+  .stat-item { flex: 0 0 100%; }
+  .stat-item + .stat-item { border-left: none; padding-left: 0; border-top: 1px solid var(--border); padding-top: 0.75rem; }
   .stat-number { font-size: 1.3rem; }
+  .stat-label { font-size: 0.66rem; }
 
-  .skills-list { grid-template-columns: 1fr 1fr; }
+  /* About cards */
+  .about-card { padding: 1rem; }
+  .about-card h3 { font-size: 0.85rem; }
+  .about-card p { font-size: 0.75rem; }
+  .about-text p { font-size: 0.85rem; }
+  .about-pic { width: 150px; height: 150px; }
+  .about-pic-placeholder { width: 150px; height: 150px; }
 
+  /* Skills — single column list */
+  .skills-list { grid-template-columns: 1fr; gap: 0.5rem; }
+  .skills-card { padding: 1rem; }
+  .skills-card-title { font-size: 0.82rem; }
+
+  /* Projects */
   .project-filters { flex-wrap: wrap; justify-content: center; }
-  .filter-btn { flex-shrink: 0; }
+  .filter-btn { flex-shrink: 0; font-size: 0.7rem; padding: 0.35rem 0.7rem; }
+  .proj-img { height: 150px; }
+  .proj-body { padding: 1rem; }
+  .proj-name { font-size: 0.9rem; }
+  .proj-desc { font-size: 0.78rem; }
 
-  .op-row { grid-template-columns: 1fr; }
-
+  /* Timeline */
   .tl-card { padding: 1rem; }
+  .tl-role { font-size: 0.84rem; }
+  .tl-company { font-size: 0.74rem; }
+  .tl-bullets li { font-size: 0.78rem; }
+  .tl-tags { gap: 4px; }
+  .tag-sm { font-size: 0.64rem; padding: 2px 7px; }
+
+  /* Volunteering */
+  .vol-head h3 { font-size: 0.86rem; }
+  .vol-org { font-size: 0.72rem; }
+  .vol-desc { font-size: 0.76rem; }
+
+  /* Awards */
+  .award-info h3 { font-size: 0.82rem; }
+  .award-info p { font-size: 0.72rem; }
+
+  /* Contact */
+  .op-row { grid-template-columns: 1fr; }
+  .contact-intro { font-size: 0.82rem; }
+  .form-input { font-size: 0.82rem; padding: 0.6rem 0.85rem; }
+  .cl-label { font-size: 0.64rem; }
+  .cl-value { font-size: 0.78rem; }
+
+  /* LinkedIn feed */
+  .lf-post { padding: 0.75rem; }
+  .lf-text { font-size: 0.74rem; }
+  .lf-tag { font-size: 0.62rem; }
+
+  /* Modal */
+  .modal-card { padding: 1.5rem 1rem; }
+  .modal-number { font-size: 1.15rem; }
+  .modal-desc { font-size: 0.85rem; margin-bottom: 1rem; }
+  .modal-input, .modal-textarea { padding: 0.6rem 0.8rem; font-size: 0.8rem; margin-bottom: 0.5rem; }
+  .modal-textarea { min-height: 70px; }
+  .modal-btn { font-size: 0.85rem; padding: 0.65rem 0.85rem; }
+
   footer { padding: 1rem; }
+  .footer-copy { font-size: 0.72rem; }
 }
