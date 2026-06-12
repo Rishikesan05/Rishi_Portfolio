@@ -20,7 +20,7 @@ ul { list-style: none; }
   --bg3:       #f0f0f0;
   --text:      #1a1a1a;
   --text2:     #555555;
-  --text3:     #666666;
+  --text3:     #555555;
   --border:    #e0e0e0;
   --border-dk: #1a1a1a;
   --card:      #ffffff;
@@ -43,7 +43,7 @@ ul { list-style: none; }
   --bg3:       #282828;
   --text:      #f0f0f0;
   --text2:     #b0b0b0;
-  --text3:     #777777;
+  --text3:     #888888;
   --border:    #333333;
   --border-dk: #999999;
   --card:      #1e1e1e;
