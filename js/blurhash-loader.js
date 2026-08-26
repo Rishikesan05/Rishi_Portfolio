@@ -42,7 +42,7 @@
       var origBg = parent.style.backgroundImage;
       var origBgSize = parent.style.backgroundSize;
 
-      parent.style.backgroundImage = "url('" + placeholder + "')";
+      parent.style.backgroundImage = "url(" + placeholder + ")";
       parent.style.backgroundSize = 'cover';
       parent.style.backgroundPosition = 'center';
 
