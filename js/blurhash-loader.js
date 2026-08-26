@@ -42,7 +42,18 @@
       var origBg = parent.style.backgroundImage;
       var origBgSize = parent.style.backgroundSize;
 
-      parent.style.backgroundImage = "url(" + placeholder + ")";
+      // Convert base64 to Blob URL to bypass Chrome/Lighthouse ERR_INVALID_URL bug for data URIs in CSS
+      var byteString = atob(placeholder.split(',')[1]);
+      var mimeString = placeholder.split(',')[0].split(':')[1].split(';')[0];
+      var ab = new ArrayBuffer(byteString.length);
+      var ia = new Uint8Array(ab);
+      for (var i = 0; i < byteString.length; i++) {
+          ia[i] = byteString.charCodeAt(i);
+      }
+      var blob = new Blob([ab], {type: mimeString});
+      var blobUrl = URL.createObjectURL(blob);
+
+      parent.style.backgroundImage = "url('" + blobUrl + "')";
       parent.style.backgroundSize = 'cover';
       parent.style.backgroundPosition = 'center';
 
@@ -58,6 +69,7 @@
             parent.style.backgroundImage = origBg || '';
             parent.style.backgroundSize = origBgSize || '';
             parent.style.backgroundPosition = '';
+            URL.revokeObjectURL(blobUrl);
           }, 500);
           img.removeEventListener('load', onLoad);
         });
@@ -67,6 +79,7 @@
           parent.style.backgroundImage = origBg || '';
           parent.style.backgroundSize = origBgSize || '';
           parent.style.backgroundPosition = '';
+          URL.revokeObjectURL(blobUrl);
           img.style.opacity = '1';
           img.removeEventListener('error', onError);
         });
@@ -76,6 +89,7 @@
         parent.style.backgroundImage = origBg || '';
         parent.style.backgroundSize = origBgSize || '';
         parent.style.backgroundPosition = '';
+        URL.revokeObjectURL(blobUrl);
       }
     });
   }
