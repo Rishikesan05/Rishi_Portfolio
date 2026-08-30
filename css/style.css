@@ -874,7 +874,6 @@ article p {
   align-items: flex-start;
   gap: 1rem;
   margin-bottom: 0.75rem;
-  flex-wrap: wrap;
 }
 .tl-title-group {
   flex: 1;
