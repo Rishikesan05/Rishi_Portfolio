@@ -876,6 +876,10 @@ article p {
   margin-bottom: 0.75rem;
   flex-wrap: wrap;
 }
+.tl-title-group {
+  flex: 1;
+  min-width: 0;
+}
 .tl-badge {
   display: inline-block;
   font-size: 0.66rem; font-weight: 700;
