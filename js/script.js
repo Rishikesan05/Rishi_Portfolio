@@ -93,7 +93,8 @@ filterBtns.forEach(btn => {
     const isExpanded = grid ? grid.classList.contains("expanded") : false;
 
     projectCards.forEach(card => {
-      const match = filter === "all" || card.dataset.category === filter;
+      const categories = (card.dataset.category || "").trim().split(/\s+/);
+      const match = filter === "all" || categories.includes(filter);
       let show = false;
       
       if (match) {
