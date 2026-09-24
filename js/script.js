@@ -83,13 +83,18 @@ const noResultsEl  = document.getElementById("no-results");
 
 filterBtns.forEach(btn => {
   btn.addEventListener("click", function () {
+    const grid = document.getElementById("projects-grid");
+    
+    // Reset expanded state if switching to a new filter tab
+    if (!this.classList.contains("active") && grid) {
+      grid.classList.remove("expanded");
+    }
+
     filterBtns.forEach(b => b.classList.remove("active"));
     this.classList.add("active");
 
     const filter = this.dataset.filter;
     let visibleCount = 0;
-    
-    const grid = document.getElementById("projects-grid");
     const isExpanded = grid ? grid.classList.contains("expanded") : false;
 
     projectCards.forEach(card => {
@@ -99,7 +104,7 @@ filterBtns.forEach(btn => {
       
       if (match) {
         visibleCount++;
-        if (filter !== "all" || isExpanded || visibleCount <= 6) {
+        if (isExpanded || visibleCount <= 6) {
           show = true;
         }
       }
@@ -112,7 +117,7 @@ filterBtns.forEach(btn => {
     
     const toggleBtn = document.getElementById("projects-toggle-btn");
     if (toggleBtn) {
-      if (filter === "all" && visibleCount > 6) {
+      if (visibleCount > 6) {
         toggleBtn.style.display = "inline-flex";
         toggleBtn.innerHTML = isExpanded 
           ? 'Show Less <svg width="20" height="20" style="width:1.2em;height:1.2em;margin-left:0.3em;vertical-align:-0.25em;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>' 
