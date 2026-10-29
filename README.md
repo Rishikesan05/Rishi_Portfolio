@@ -1,6 +1,7 @@
 # Rishi Portfolio | Full-Stack Digital Transformation Engineer
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-portfolio.rishiware.com-00C49F?style=for-the-badge&logo=google-chrome&logoColor=white)](https://portfolio.rishiware.com)
+[![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg?style=for-the-badge)](LICENSE)
 
 
 The **Rishi Portfolio** is a premium, high-performance personal showcase of engineering-led digital products, architectural design, and creative content. It serves as the central hub for the work of **Rishikesan**, a Full-Stack Digital Transformation Engineer based in Sri Lanka.
