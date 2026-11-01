@@ -4,7 +4,7 @@
 [![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg?style=for-the-badge)](LICENSE)
 
 
-The **Rishi Portfolio** is a premium, high-performance personal showcase of engineering-led digital products, architectural design, and creative content. It serves as the central hub for the work of **Rishikesan**, a Full-Stack Digital Transformation Engineer based in Sri Lanka.
+The **Rishi Portfolio** is a premium, high-performance personal showcase of engineering-led digital products, architectural design, and creative content. It serves as the central hub for the work of **Rishikesan**, a Full-Stack Developer based in Sri Lanka.
 
 ## 🌟 Key Features
 - **Dynamic Project Filtering**: Categorized project showcase with real-time filtering for Web, Mobile, and Full-Stack solutions.
