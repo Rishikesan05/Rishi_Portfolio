@@ -1,4 +1,4 @@
-# Rishi Portfolio | Full-Stack Digital Transformation Engineer
+# Rishi Portfolio | Full-Stack Developer
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-rishiware.com-00C49F?style=for-the-badge&logo=google-chrome&logoColor=white)](https://rishiware.com)
 [![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg?style=for-the-badge)](LICENSE)
